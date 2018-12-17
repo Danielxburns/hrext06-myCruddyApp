@@ -6,7 +6,6 @@ $(document).ready(function(){
     localStorage.setItem(new Date(), $('.text-entry').val());
     var myItemInStorage = localStorage.getItem(new Date());
     console.log(new Date(), myItemInStorage);
-    // create new key from timestamp
 
 
     // display the value here
@@ -20,5 +19,7 @@ $(document).ready(function(){
   });
 
   // delete all storage
-
+  $('.btn-clearAll').click(function(){
+    localStorage.clear();
+  })
 });
