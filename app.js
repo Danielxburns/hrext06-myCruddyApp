@@ -3,9 +3,11 @@ $(document).ready(function(){
 
   // write to local storage from input when button save clicked
   $('.btn-submit').on('click', function(){
-    localStorage.setItem('inputFieldValue', $('.text-entry').val());
-    var myItemInStorage = localStorage.getItem('inputFieldValue');
-    console.log('myItemInStorage', myItemInStorage);
+    localStorage.setItem(new Date(), $('.text-entry').val());
+    var myItemInStorage = localStorage.getItem(new Date());
+    console.log(new Date(), myItemInStorage);
+    // create new key from timestamp
+
 
     // display the value here
     $('.list-display-field').text(myItemInStorage); // ??
@@ -16,5 +18,7 @@ $(document).ready(function(){
   $('.btn-delete').on('click', function(){
     localStorage.removeItem('inputFieldValue');
   });
+
+  // delete all storage
 
 });
