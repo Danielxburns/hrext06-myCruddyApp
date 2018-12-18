@@ -27,7 +27,7 @@ create a mood tracker:
 
 	- asks you what you are doing at the time and what you were doing just before
 
-	- asks where you are feeling it in your body. does it have a color? a shape? 
+	- asks where you are feeling it in your body. does it have a color? a shape?
 	- anything else you'd like to add?
 
 	-set schedule for prompts
@@ -43,24 +43,50 @@ create a mood tracker:
 	- ask about food after meals
 
 
-
-- [ ] set up "How you doing?" button and input field
+- [ ] set up "How you doing?" input field and submit button
 - [ ] set up prompt schedule
+// use setInterval to repeat every 86400000 milliseconds for daily reminder
 	- [ ] "set sched" button and functionality
 	- [ ] "set time" button for each prompt
 - [ ] set up emoji reponses
 - [ ] add "buzz off" button
-- [ ] add buttons and fields for 
+- [ ] add buttons and fields for
 	- [ ] sleep
 	- [ ] exercise
 	- [ ] meditation
 	- [ ] food
-- [ ] 
+- [ ]
 
 
 
-- [ ] color code the data by timestamp (older more greyed out)
+
 
 - [ ] save my local storage to a remote storage for back up
 
 - [ ] Optional: Host on repl.it (html,css, js)
+
+----------------------------------------------------------
+
+entry page
+
+// need to start a new data set for each day
+
+- [ ] how are feeling this morning?
+- [ ] how much sleep did you get last night?
+- [ ] did you meditate or exercise this morning?
+- [ ] what are you looking forward to about today?
+- [ ] how often would you like me to check in today?
+  - [ ] setIterval for prompts
+  [ ] 'submit button'
+    [ ] format timestamp by date (dd/mm/yyyy);
+  [ ] 'delete button
+    [ ] delete by date
+
+  prompts
+
+  // need to store entered data as an object
+    // time as key
+      // prompt entries as nested object
+      // keys set as how, what, before
+
+- [ ]
