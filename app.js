@@ -5,12 +5,14 @@ $(document).ready(function(){
   // var beforeFunc = prompt('What were you doing right before that?')
     var day = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('/');
     console.log(day);
-    var agenda = {};
+    var agenda = {}
+    var agendaItems = [];
     $('.btn-add').click(function(){
       // display the value here
       var agendaItem = $('.agenda-item').val()
-      console.log(agendaItem);
-      $('.agenda-display-field').text(agendaItem)
+      agendaItems.push(agendaItem);
+      console.log(agendaItems);
+      $('.agenda-display-field').append('<div>' +agendaItem + '</div>')
       }); // ??
 
     // write to local storage from input when button save   clicked
