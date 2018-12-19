@@ -5,6 +5,13 @@ $(document).ready(function(){
   // var beforeFunc = prompt('What were you doing right before that?')
     var day = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('/');
     console.log(day);
+    var agenda = {};
+    $('.btn-add').click(function(){
+      // display the value here
+      var agendaItem = $('.agenda-item').val()
+      console.log(agendaItem);
+      $('.agenda-display-field').text(agendaItem)
+      }); // ??
 
     // write to local storage from input when button save   clicked
     $('.btn-submit').on('click', function(){
@@ -13,8 +20,6 @@ $(document).ready(function(){
       console.log(day, myItemInStorage);
 
 
-      // display the value here
-      $('.agenda-display-field').text(myItemInStorage); // ??
 
     });
 

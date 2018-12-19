@@ -74,7 +74,9 @@ entry page
 [ ] add input fields
 - [X] how are feeling this morning?
 - [ ] what's on the agenda for today?
-  - [ ] 'Add' button
+  - [X] add 'Add' button
+  - [X] display agenda item
+  - [ ] display another agenda item
 - [X] how much sleep did you get last night?
 - [X] what are you most looking forward to about today?
 - [ ] how often would you like me to check in today?
