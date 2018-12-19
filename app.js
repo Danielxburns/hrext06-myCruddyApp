@@ -3,17 +3,18 @@ $(document).ready(function(){
   // var howFunc = prompt('How are you feeling?')
   // var whatFunc = prompt('What are you up to?')
   // var beforeFunc = prompt('What were you doing right before that?')
-    var day = function()
+    var day = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('/');
+    console.log(day);
 
     // write to local storage from input when button save   clicked
     $('.btn-submit').on('click', function(){
-      localStorage.setItem(new Date(), $('.text-entry').val());
-      var myItemInStorage = localStorage.getItem(new Date());
-      console.log(new Date(), myItemInStorage);
+      localStorage.setItem(day, $('.text-entry').val());
+      var myItemInStorage = localStorage.getItem(day);
+      console.log(day, myItemInStorage);
 
 
       // display the value here
-      $('.list-display-field').text(myItemInStorage); // ??
+      $('.agenda-display-field').text(myItemInStorage); // ??
 
     });
 

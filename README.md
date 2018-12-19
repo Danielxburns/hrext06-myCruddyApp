@@ -72,15 +72,17 @@ entry page
 // need to start a new data set for each day
 
 [ ] add input fields
-- [ ] how are feeling this morning?
-- [ ] how much sleep did you get last night?
-- [ ] what are you looking forward to about today?
+- [X] how are feeling this morning?
+- [ ] what's on the agenda for today?
+  - [ ] 'Add' button
+- [X] how much sleep did you get last night?
+- [X] what are you most looking forward to about today?
 - [ ] how often would you like me to check in today?
   - [ ] convert input from hours to msecs
   - [ ] setIterval for prompts
-  [ ] center buttons
-  [ ] 'submit button'
-    [ ] format timestamp by date (dd/mm/yyyy);
+  [ ] 'submit button
+    [X] format timestamp by date (dd/mm/yyyy);
+  - [ ] move mornin-feels, agenda, sleep, and outlook to localStorage as nested objects of Date object
   - [ ] initiate prompt function
   [ ] 'delete button
     [ ] delete by date
@@ -91,5 +93,6 @@ entry page
     // time as key
       // prompt entries as nested object
       // keys set as how, what, before
+      // move input to storage as nested objects of Date object
 
 - [ ]
