@@ -71,14 +71,17 @@ entry page
 
 // need to start a new data set for each day
 
+[ ] add input fields
 - [ ] how are feeling this morning?
 - [ ] how much sleep did you get last night?
-- [ ] did you meditate or exercise this morning?
 - [ ] what are you looking forward to about today?
 - [ ] how often would you like me to check in today?
+  - [ ] convert input from hours to msecs
   - [ ] setIterval for prompts
+  [ ] center buttons
   [ ] 'submit button'
     [ ] format timestamp by date (dd/mm/yyyy);
+  - [ ] initiate prompt function
   [ ] 'delete button
     [ ] delete by date
 
