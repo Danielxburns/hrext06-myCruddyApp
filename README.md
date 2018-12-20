@@ -82,6 +82,7 @@ entry page
   - [ ] add 'delete item' that deletes by item number
 - [X] how much sleep did you get last night?
 - [X] what are you most looking forward to about today?
+    [ ] append to agenda?
 - [ ] how often would you like me to check in today?
   - [ ] convert input from hours to msecs
   - [ ] setIterval for prompts
@@ -94,10 +95,10 @@ entry page
 
   prompts
 
-  // need to store entered data as an object
-    // time as key
-      // prompt entries as nested object
-      // keys set as how, what, before
-      // move input to storage as nested objects of Date object
+- [X] need to store entered data as an object
+  - [X] time as key
+-   [X] prompt entries as nested object
+-   [X] keys set as how, what, before
+-   [X] move input to storage as nested objects of Date object
 
 - [ ]
