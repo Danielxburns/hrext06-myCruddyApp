@@ -4,9 +4,9 @@ $(document).ready(function(){
   // var whatFunc = prompt('What are you up to?')
   // var beforeFunc = prompt('What were you doing right before that?')
     var day = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('/');
-    console.log(day);
     var agenda = {}
     var agendaItems = [];
+
     $('.btn-add').click(function(){
       // display the value here
       var agendaItem = $('.agenda-item').val()
@@ -17,12 +17,18 @@ $(document).ready(function(){
 
     // write to local storage from input when button save   clicked
     $('.btn-submit').on('click', function(){
-      localStorage.setItem(day, $('.text-entry').val());
+      var morning = $('.morning').val();
+      var data = {}
+      var sleep = $('.sleep').val();
+      var outlook  = $('.outlook').val();
+      agenda.agendaItems = agendaItems
+      data.morning = morning;
+      data.agenda = agenda;
+      data.sleep = sleep;
+      data.outlook = outlook;
+      localStorage.setItem(day, data/*$('.text-entry').val()*/);
       var myItemInStorage = localStorage.getItem(day);
-      console.log(day, myItemInStorage);
-
-
-
+      console.log(day, data);
     });
 
     // delete from local storage when delete button clicked

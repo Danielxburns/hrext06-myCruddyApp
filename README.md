@@ -77,6 +77,9 @@ entry page
   - [X] add 'Add' button
   - [X] display agenda item
   - [X] display another agenda item
+  - [ ] make pressing 'enter' do the same thing as clicking the 'add' button
+  - [ ] display a number prefix for each agenda item
+  - [ ] add 'delete item' that deletes by item number
 - [X] how much sleep did you get last night?
 - [X] what are you most looking forward to about today?
 - [ ] how often would you like me to check in today?
@@ -84,10 +87,10 @@ entry page
   - [ ] setIterval for prompts
   [ ] 'submit button
     [X] format timestamp by date (dd/mm/yyyy);
-  - [ ] move mornin-feels, agenda, sleep, and outlook to localStorage as nested objects of Date object
+  - [X] move morning, agenda, sleep, and outlook to localStorage as a nested objects of Date object
   - [ ] initiate prompt function
   [ ] 'delete button
-    [ ] delete by date
+    [ ] add field to delete by date
 
   prompts
 
