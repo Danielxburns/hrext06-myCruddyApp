@@ -3,7 +3,7 @@ $(document).ready(function(){
   // var howFunc = prompt('How are you feeling?')
   // var whatFunc = prompt('What are you up to?')
   // var beforeFunc = prompt('What were you doing right before that?')
-    var day = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('/');
+    var today = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('/');
     var agenda = {}
     var agendaItems = [];
 
@@ -26,9 +26,12 @@ $(document).ready(function(){
       data.agenda = agenda;
       data.sleep = sleep;
       data.outlook = outlook;
-      localStorage.setItem(day, data/*$('.text-entry').val()*/);
-      var myItemInStorage = localStorage.getItem(day);
-      console.log(day, data);
+
+      localStorage.setItem(today, JSON.stringify(data));
+      // var myItemInStorage = localStorage.getItem(JSON.parse(today));
+      console.log(today, data);
+
+      var checkInTime = $('.interval').val()
     });
 
     // delete from local storage when delete button clicked
