@@ -88,7 +88,7 @@ entry page
   [ ] 'submit button
     [X] format timestamp by date (dd/mm/yyyy);
   - [X] move morning, agenda, sleep, and outlook to localStorage as a nested objects of Date object
-  - [ ] initiate prompt function
+  - [X] initiate prompt function
   [ ] 'delete button
     [ ] add field to delete by date
 

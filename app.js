@@ -1,8 +1,5 @@
 $(document).ready(function(){
   console.log('jQuery loaded');
-  // var howFunc = prompt('How are you feeling?')
-  // var whatFunc = prompt('What are you up to?')
-  // var beforeFunc = prompt('What were you doing right before that?')
     var today = new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('/');
     var agenda = {}
     var agendaItems = [];
@@ -31,7 +28,12 @@ $(document).ready(function(){
       // var myItemInStorage = localStorage.getItem(JSON.parse(today));
       console.log(today, data);
 
-      var checkInTime = $('.interval').val()
+      var checkInTime = ($('.interval').val()) * 3600000
+      window.setInterval(function() {
+        var howFunc = prompt('How are you feeling?')
+        var whatFunc = prompt('What are you up to?')
+        var beforeFunc = prompt('What were you doing right before that?')
+      }, checkInTime)
     });
 
     // delete from local storage when delete button clicked
