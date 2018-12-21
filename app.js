@@ -11,7 +11,7 @@ $(document).ready(function(){
       });
     $('.btn-delete-item').click(function(){
       var agendaItem = $('.agenda-item').val()
-      $('<li value="' + agendaItem + '"></li>').remove();
+      $('li').filter(function() { return $.text([this]) === agendaItem; }).remove();
     })
 
     // write to local storage from input when button save   clicked
