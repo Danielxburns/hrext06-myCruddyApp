@@ -11,8 +11,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] Read from local storage
 - [x] Edit local storage
     - [X] What about if we have more than one value?
-    - [ ] how do we add multiple values?
-        - [ ] maybe use an array?
+    - [X] how do we add multiple values?
         - [x] maybe use multiple keys? create new keyname each time
 
 - [x] Delete local storage
@@ -28,8 +27,6 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 create a mood tracker:
 
 entry page
-
-// need to start a new data set for each day
 
 [ ] add input fields
 - [X] how are feeling this morning?
@@ -52,7 +49,7 @@ entry page
 - [X] 'clear storage' button
   - [X] add 'are you sure?' prompt
 
-  prompts
+prompts
 
 - [X] need to store entered data as an object
   - [X] time as key
@@ -104,4 +101,4 @@ entry page
 ----------------------------------------------------------
 
 
-- [ ]
+
