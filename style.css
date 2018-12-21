@@ -1,0 +1,10 @@
+body {
+  background-color: moccasin;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 10px double;
+  border-color: lightsalmon;
+  /*justify-content: center;*/
+  padding: 30px;
+  border-radius: 40px
+}
+
