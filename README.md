@@ -29,7 +29,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 entry page
 
-[X] add input fields
+ [X] add input fields
 - [X] how are feeling this morning?
 - [X] what's on the agenda for today?
   - [X] add 'Add' button
