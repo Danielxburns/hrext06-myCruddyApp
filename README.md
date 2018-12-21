@@ -24,7 +24,8 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [ ] Optional: Host on repl.it (html,css, js)
 
 ### Next Sprint (what are we trying to code)
-create a mood tracker:
+
+## To Be list
 
 entry page
 
