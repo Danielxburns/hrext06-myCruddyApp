@@ -5,12 +5,14 @@ $(document).ready(function(){
     var agendaItems = [];
 
     $('.btn-add').click(function(){
-      // display the value here
       var agendaItem = $('.agenda-item').val()
       agendaItems.push(agendaItem);
-      console.log(agendaItems);
-      $('.agenda-display-field').append('<div>' +agendaItem + '</div>')
-      }); // ??
+      $('.agenda-display-field').append('<li value=' + agendaItem + '>' + agendaItem + '</li>')
+      });
+    $('.btn-delete-item').click(function(){
+      var agendaItem = $('.agenda-item').val()
+      $('<li value="' + agendaItem + '"></li>').remove();
+    })
 
     // write to local storage from input when button save   clicked
     $('.btn-submit').on('click', function(){
@@ -29,6 +31,9 @@ $(document).ready(function(){
       console.log(today, data);
 
       var checkInInterval = ($('.interval').val()) * 3600000
+      if(checkInInterval < 8000) {
+        checkInInterval = 8000;
+      }
       window.setInterval(function() {
         var howFunc = prompt('How are you feeling?')
         var whatFunc = prompt('What are you up to?')
